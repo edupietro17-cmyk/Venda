@@ -1,0 +1,333 @@
+/* =========================
+RESET PROFISSIONAL
+========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #f5f6fa;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* =========================
+DESIGN SYSTEM PREMIUM
+========================= */
+:root {
+  --primary: #ff3d5a;
+  --primary-dark: #e63350;
+  --secondary: #6c63ff;
+
+  --text: #1a1a1a;
+  --text-light: #6b6b6b;
+
+  --bg: #f5f6fa;
+  --white: #ffffff;
+
+  --radius: 14px;
+  --shadow-soft: 0 10px 30px rgba(0,0,0,0.05);
+  --shadow-strong: 0 20px 60px rgba(0,0,0,0.12);
+
+  --max-width: 1100px;
+}
+
+/* =========================
+CONTAINER
+========================= */
+.container {
+  width: 90%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* =========================
+TIPOGRAFIA
+========================= */
+h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+p {
+  color: var(--text-light);
+}
+
+/* =========================
+SECTIONS
+========================= */
+section {
+  padding: 4rem 0;
+}
+
+/* =========================
+HEADER (FIXO + PREMIUM)
+========================= */
+header {
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+
+/* =========================
+BOTÕES (CONVERSÃO REAL)
+========================= */
+.btn {
+  display: inline-block;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #6c63ff, #8a7fff);
+  color: white;
+  padding: 0.8rem 1.6rem;
+}
+
+.btn-cta {
+  background: linear-gradient(135deg, var(--primary), #ff6b81);
+  color: white;
+  padding: 1.2rem 2rem;
+  font-size: 1.1rem;
+  box-shadow: var(--shadow-strong);
+}
+
+.btn:hover {
+  transform: translateY(-3px) scale(1.02);
+}
+
+/* =========================
+HERO (ALTO IMPACTO)
+========================= */
+.hero {
+  text-align: center;
+  padding: 5rem 0;
+  background: linear-gradient(180deg, #ffffff, #f5f6fa);
+}
+
+.micro-proof {
+  background: rgba(0,0,0,0.05);
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.hero strong {
+  color: var(--primary);
+}
+
+.hero-subtitle {
+  max-width: 600px;
+  margin: 1.5rem auto 2rem;
+  font-size: 1.05rem;
+}
+
+/* =========================
+CARDS (PROFISSIONAL)
+========================= */
+.benefits-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.benefit-item {
+  background: white;
+  padding: 1.8rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  transition: 0.3s;
+}
+
+.benefit-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-strong);
+}
+
+/* =========================
+PROBLEMA / SEÇÕES
+========================= */
+.problem,
+.offer,
+.objections {
+  background: white;
+}
+
+.problem-highlight {
+  color: var(--primary);
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* =========================
+OFERTA (HIGH CONVERT)
+========================= */
+.offer {
+  text-align: center;
+}
+
+.offer-card {
+  background: white;
+  border-radius: 18px;
+  padding: 2.5rem;
+  box-shadow: var(--shadow-strong);
+  max-width: 520px;
+  margin: 2rem auto 0;
+}
+
+.guarantee-badge {
+  background: #eafaf1;
+  color: #2ecc71;
+  padding: 0.6rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.price {
+  margin: 1.8rem 0;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.price span {
+  text-decoration: line-through;
+  font-size: 1rem;
+  color: #999;
+}
+
+.safe-text {
+  font-size: 0.85rem;
+  margin-top: 1rem;
+}
+
+.urgency {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #999;
+}
+
+/* =========================
+TESTIMONIALS
+========================= */
+.testimonials {
+  text-align: center;
+}
+
+.testimonial {
+  background: white;
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  margin-top: 1rem;
+}
+
+/* =========================
+CTA FINAL
+========================= */
+.final-cta {
+  text-align: center;
+  background: linear-gradient(135deg, #fff, #ffe9ee);
+}
+
+/* =========================
+FOOTER
+========================= */
+footer {
+  background: #0f0f0f;
+  color: #aaa;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+footer a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+}
+
+/* =========================
+RESPONSIVO
+========================= */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .benefits-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* =========================
+ANIMAÇÕES SUAVES
+========================= */
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.6s;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================
+CTA FIXO MOBILE (VENDA REAL)
+========================= */
+.sticky-cta {
+  position: fixed;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  text-align: center;
+  z-index: 999;
+}
